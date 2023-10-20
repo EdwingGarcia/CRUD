@@ -13,9 +13,14 @@ namespace CRUD.Controllers
         }
 
         // GET: ProductoController/Details/5
-        public IActionResult Details(int id)
+        public IActionResult Details(int IdProducto)
         {
-            return View();
+            Producto p = Util.Utils.ListaProducto.Find(x => x.IdProducto == IdProducto);
+            if (p != null)
+            {
+                return View(p);
+            }
+            return RedirectToAction("Index");
         }
 
         // GET: ProductoController/Create
@@ -34,9 +39,30 @@ namespace CRUD.Controllers
         }
 
        
+
         // GET: ProductoController/Edit/5
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int IdProducto)
         {
+            Producto p = Util.Utils.ListaProducto.Find(x => x.IdProducto == IdProducto);
+            if(p !=null)
+            {
+                return View(p);
+            }
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Producto producto)
+        {
+            Producto p = Util.Utils.ListaProducto.Find(x => x.IdProducto == producto.IdProducto);
+            if(p !=null)
+            {
+                p.IdProducto = producto.IdProducto;
+                p.Nombre= producto.Nombre;
+                p.Descripcion= producto.Descripcion;
+                p.Cantidad= producto.Cantidad;
+                return RedirectToAction("Index");
+            }
             return View();
         }
      
