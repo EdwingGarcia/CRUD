@@ -64,15 +64,37 @@ namespace API.Controllers
 
 
         // PUT api/<ProductoController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{IdProducto}")]
+        public async  Task<IActionResult> Put(int IdProducto, [FromBody] Producto producto)
         {
+            Producto p = await _db.Producto.FirstOrDefaultAsync(x => x.IdProducto == IdProducto);
+            if (p != null)
+            {
+                p.Nombre= producto.Nombre !=null ? producto.Nombre : p.Nombre;
+                p.Descripcion= producto.Descripcion != null ? producto.Descripcion : p.Descripcion;
+                p.Cantidad = producto.Cantidad != null ? producto.Cantidad : p.Cantidad;
+                _db.Producto.Update(p);
+                await _db.SaveChangesAsync();
+                return Ok(p);
+
+            }
+            return BadRequest();
+
         }
 
         // DELETE api/<ProductoController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{IdProducto}")]
+        public async  Task<IActionResult> Delete(int IdProducto)
         {
+            Producto p = await _db.Producto.FirstOrDefaultAsync(x => x.IdProducto == IdProducto);
+            if (p != null)
+            {
+               _db.Producto.Remove(p);
+                await _db.SaveChangesAsync();
+                return NoContent();
+
+            }
+            return BadRequest();
         }
     }
 }
