@@ -12,10 +12,10 @@ namespace API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Producto>().HasData( 
-                new Producto(){IdProducto=1,Nombre="NICO", Descripcion="LO LOGRASTE, ESTOY ORGULLOSO", Cantidad=12},
-                new Producto(){IdProducto=2,Nombre="Sebas", Descripcion="Hola", Cantidad=1},
-                new Producto(){IdProducto=5,Nombre="Rusky", Descripcion="Bai", Cantidad=22},
-                new Producto(){IdProducto=3,Nombre="Tilin", Descripcion="Setso", Cantidad=4}
+                new Producto(){IdProducto=1,Nombre="Teléfono", Descripcion="Xiaomi Mi 9T Pro", Cantidad=12},
+                new Producto(){IdProducto=2,Nombre="Casco", Descripcion="LS2 Raptor", Cantidad=1},
+                new Producto(){IdProducto=5,Nombre="Audífono", Descripcion="Xiaomi Bunds 4", Cantidad=22},
+                new Producto(){IdProducto=3,Nombre="Pc Gamer", Descripcion="Asus Tuf", Cantidad=4}
                 
                 );    
         }

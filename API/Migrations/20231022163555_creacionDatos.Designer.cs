@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20231020230816_CrearBaseDatos")]
-    partial class CrearBaseDatos
+    [Migration("20231022163555_creacionDatos")]
+    partial class creacionDatos
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,6 +46,36 @@ namespace API.Migrations
                     b.HasKey("IdProducto");
 
                     b.ToTable("Producto");
+
+                    b.HasData(
+                        new
+                        {
+                            IdProducto = 1,
+                            Cantidad = 12,
+                            Descripcion = "Xiaomi Mi 9T Pro",
+                            Nombre = "Teléfono"
+                        },
+                        new
+                        {
+                            IdProducto = 2,
+                            Cantidad = 1,
+                            Descripcion = "LS2 Raptor",
+                            Nombre = "Casco"
+                        },
+                        new
+                        {
+                            IdProducto = 5,
+                            Cantidad = 22,
+                            Descripcion = "Xiaomi Bunds 4",
+                            Nombre = "Audífono"
+                        },
+                        new
+                        {
+                            IdProducto = 3,
+                            Cantidad = 4,
+                            Descripcion = "Asus Tuf",
+                            Nombre = "Pc Gamer"
+                        });
                 });
 #pragma warning restore 612, 618
         }

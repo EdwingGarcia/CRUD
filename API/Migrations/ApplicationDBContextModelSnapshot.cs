@@ -49,29 +49,29 @@ namespace API.Migrations
                         {
                             IdProducto = 1,
                             Cantidad = 12,
-                            Descripcion = "LO LOGRASTE, ESTOY ORGULLOSO",
-                            Nombre = "NICO"
+                            Descripcion = "Xiaomi Mi 9T Pro",
+                            Nombre = "Teléfono"
                         },
                         new
                         {
                             IdProducto = 2,
                             Cantidad = 1,
-                            Descripcion = "Hola",
-                            Nombre = "Sebas"
+                            Descripcion = "LS2 Raptor",
+                            Nombre = "Casco"
                         },
                         new
                         {
                             IdProducto = 5,
                             Cantidad = 22,
-                            Descripcion = "Bai",
-                            Nombre = "Rusky"
+                            Descripcion = "Xiaomi Bunds 4",
+                            Nombre = "Audífono"
                         },
                         new
                         {
                             IdProducto = 3,
                             Cantidad = 4,
-                            Descripcion = "Setso",
-                            Nombre = "Tilin"
+                            Descripcion = "Asus Tuf",
+                            Nombre = "Pc Gamer"
                         });
                 });
 #pragma warning restore 612, 618

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SwtxH1tiXpe40bi9QVvl6/YBCgSDLl+aGJ9X1XBTxYWZYPmZcDbF5+AIxJRzzGWxKZJA55DYzgPfSJ6WTSDmyw==",
+  "dgSpecHash": "qWvN15QE3iz/CmrgBqM0bI7y258/mhoSaWNlZO6zka2oT7KOatZ73EU7Zz9OCvrhqLuYnvuuW2DKW0bIpwMbJA==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicko\\Documents\\Quinto\\Programación IV\\Proyectos\\CRUD\\CRUD\\CRUD.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nicko\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -28,3 +28,6 @@ C:\Users\nicko\Documents\Quinto\Programación IV\Proyectos\CRUD\CRUD\obj\Debug\n
 C:\Users\nicko\Documents\Quinto\Programación IV\Proyectos\CRUD\CRUD\obj\Debug\net7.0\CRUD.pdb
 C:\Users\nicko\Documents\Quinto\Programación IV\Proyectos\CRUD\CRUD\obj\Debug\net7.0\CRUD.genruntimeconfig.cache
 C:\Users\nicko\Documents\Quinto\Programación IV\Proyectos\CRUD\CRUD\obj\Debug\net7.0\ref\CRUD.dll
+C:\Users\nicko\Documents\Quinto\Programación IV\Proyectos\CRUD\CRUD\obj\Debug\net7.0\CRUD.csproj.AssemblyReference.cache
+C:\Users\nicko\Documents\Quinto\Programación IV\Proyectos\CRUD\CRUD\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\nicko\Documents\Quinto\Programación IV\Proyectos\CRUD\CRUD\obj\Debug\net7.0\CRUD.csproj.CopyComplete
